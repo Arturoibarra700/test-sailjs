@@ -4,7 +4,13 @@ var assert = require('assert');
 var createdSegment;
 require('../bootstrap.test');
 
+var accessories = require('../fixtures/accessories');
+
 describe('Accessories Controller', function() {
+  before(function(done) {
+
+  
+  });
   it('get /fetch', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -24,7 +30,7 @@ describe('Accessories Controller', function() {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .post('/accessories')
-      .send()
+      .send(accessories)
       .expect(200)
       .end(function(err, result) {
         if (err) {

@@ -4,7 +4,7 @@ var assert = require('assert');
 var createdSegment;
 require('../bootstrap.test');
 
-var accessories = require('../fixtures/accessories');
+var accessories = require('../fixtures/accessories.json');
 
 describe('Accessories Controller', function() {
   before(function(done) {

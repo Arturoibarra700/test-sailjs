@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.068" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2021-11-28T01:50:55" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.053" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-28T01:53:11" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="0" time="0.06">
-    <testcase name="Accessories Controller get /fetch" time="0.06" classname="get /fetch">
+  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:53:12" tests="1" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="0" time="0.039">
+    <testcase name="Accessories Controller get /fetch" time="0.039" classname="get /fetch">
     </testcase>
   </testsuite>
-  <testsuite name="Segment Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.008">
-    <testcase name="Segment Controller get /segment" time="0.008" classname="get /segment">
+  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:53:12" tests="1" file="/projects/challenge/test/controllers/CarsController.test.js" failures="0" time="0.008">
+    <testcase name="Accessories Controller get /car" time="0.008" classname="get /car">
+    </testcase>
+  </testsuite>
+  <testsuite name="Segment Controller" timestamp="2021-11-28T01:53:12" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.006">
+    <testcase name="Segment Controller get /segment" time="0.006" classname="get /segment">
     </testcase>
   </testsuite>
 </testsuites>

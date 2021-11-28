@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.07100000000000001" tests="3" failures="1">
-  <testsuite name="Root Suite" timestamp="2021-11-28T01:20:29" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="5.043" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-11-28T01:44:53" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:20:30" tests="2" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="1" time="0.065">
-    <testcase name="Accessories Controller get /fetch" time="0.055" classname="get /fetch">
-    </testcase>
-    <testcase name="Accessories Controller post /fetch" time="0.01" classname="post /fetch">
-      <failure><![CDATA[Error: expected 200 "OK", got 400 "Bad Request"
-    at Test._assertStatus (node_modules/supertest/lib/test.js:266:12)
-    at Test._assertFunction (node_modules/supertest/lib/test.js:281:11)
-    at Test.assert (node_modules/supertest/lib/test.js:171:18)
-    at Server.assert (node_modules/supertest/lib/test.js:131:12)
-    at emitCloseNT (net.js:1664:8)
-    at _combinedTickCallback (internal/process/next_tick.js:136:11)
-    at process._tickDomainCallback (internal/process/next_tick.js:219:9)]]></failure>
+  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:44:54" tests="2" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="1" time="5.006">
+    <testcase name="Accessories Controller &quot;before all&quot; hook" time="5.006" classname="&quot;before all&quot; hook">
+      <failure><![CDATA[Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Segment Controller" timestamp="2021-11-28T01:20:30" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.006">
-    <testcase name="Segment Controller get /segment" time="0.006" classname="get /segment">
+  <testsuite name="Segment Controller" timestamp="2021-11-28T01:44:59" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.037">
+    <testcase name="Segment Controller get /segment" time="0.037" classname="get /segment">
     </testcase>
   </testsuite>
 </testsuites>

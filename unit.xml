@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.068" tests="2" failures="0">
+    <testsuite name="Root Suite" timestamp="2021-11-28T01:50:55" tests="0" failures="0" time="0"/>
+    <testsuite name="Accessories Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="0" time="0.06">
+        <testcase name="Accessories Controller get /fetch" time="0.06" classname="get /fetch"/>
+    </testsuite>
+    <testsuite name="Segment Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.008">
+        <testcase name="Segment Controller get /segment" time="0.008" classname="get /segment"/>
+    </testsuite>
+    <testsuite name="CarsApi Test Coverage" errors="0" package="CarsApi Test Coverage" hostname="localhost" tests="10" failures="12" time="0.111" timestamp="" id="3">
+        <properties/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <system-out/>
+        <system-err/>
+    </testsuite>
+</testsuites>

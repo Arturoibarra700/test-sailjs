@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="5.043" tests="3" failures="1">
-  <testsuite name="Root Suite" timestamp="2021-11-28T01:44:53" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.068" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-28T01:50:55" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:44:54" tests="2" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="1" time="5.006">
-    <testcase name="Accessories Controller &quot;before all&quot; hook" time="5.006" classname="&quot;before all&quot; hook">
-      <failure><![CDATA[Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.]]></failure>
+  <testsuite name="Accessories Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/AccessoriesController.test.js" failures="0" time="0.06">
+    <testcase name="Accessories Controller get /fetch" time="0.06" classname="get /fetch">
     </testcase>
   </testsuite>
-  <testsuite name="Segment Controller" timestamp="2021-11-28T01:44:59" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.037">
-    <testcase name="Segment Controller get /segment" time="0.037" classname="get /segment">
+  <testsuite name="Segment Controller" timestamp="2021-11-28T01:50:56" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.008">
+    <testcase name="Segment Controller get /segment" time="0.008" classname="get /segment">
     </testcase>
   </testsuite>
 </testsuites>

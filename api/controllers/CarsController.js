@@ -16,6 +16,7 @@ module.exports = {
 
   create: function(req, res, next) {
     var carData = req.body;
+    console.log(carData);
     Cars.create(carData)
       .exec(function(err, cars) {
         if (err) {

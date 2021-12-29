@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.666" tests="31" failures="0">
+    <testsuite name="Root Suite" timestamp="2021-12-29T01:59:34" tests="0" failures="0" time="0"/>
+    <testsuite name="Accessories Controller" timestamp="2021-12-29T01:59:36" tests="7" file="/home/azureuser/Documents/test-sailjs/test/controllers/AccessoriesController.test.js" failures="0" time="0.22999999999999998">
+        <testcase name="Accessories Controller get /accessories" time="0.084" classname="get /accessories"/>
+        <testcase name="Accessories Controller get /accessories fails" time="0.014" classname="get /accessories fails"/>
+        <testcase name="Accessories Controller post /accessories" time="0.065" classname="post /accessories"/>
+        <testcase name="Accessories Controller put /accessories" time="0.02" classname="put /accessories"/>
+        <testcase name="Accessories Controller delete /accessories" time="0.02" classname="delete /accessories"/>
+        <testcase name="Accessories Controller deleteAll /accessories" time="0.015" classname="deleteAll /accessories"/>
+        <testcase name="Accessories Controller search /accessories" time="0.012" classname="search /accessories"/>
+    </testsuite>
+    <testsuite name="Accessories Controller" timestamp="2021-12-29T01:59:36" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/CarsController.test.js" failures="0" time="0.125">
+        <testcase name="Accessories Controller get /car" time="0.013" classname="get /car"/>
+        <testcase name="Accessories Controller post /car" time="0.044" classname="post /car"/>
+        <testcase name="Accessories Controller put /car" time="0.019" classname="put /car"/>
+        <testcase name="Accessories Controller delete /car" time="0.019" classname="delete /car"/>
+        <testcase name="Accessories Controller search /car" time="0.012" classname="search /car"/>
+        <testcase name="Accessories Controller deleteAll /car" time="0.018" classname="deleteAll /car"/>
+    </testsuite>
+    <testsuite name="Accessories Controller" timestamp="2021-12-29T01:59:36" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/ManufacturerController.test.js" failures="0" time="0.12999999999999998">
+        <testcase name="Accessories Controller get /manufacturer" time="0.027" classname="get /manufacturer"/>
+        <testcase name="Accessories Controller put /manufacturer" time="0.023" classname="put /manufacturer"/>
+        <testcase name="Accessories Controller post /manufacturer" time="0.036" classname="post /manufacturer"/>
+        <testcase name="Accessories Controller delete /manufacturer" time="0.025" classname="delete /manufacturer"/>
+        <testcase name="Accessories Controller deleteAll /manufacturer" time="0.01" classname="deleteAll /manufacturer"/>
+        <testcase name="Accessories Controller get /manufacturer/id" time="0.009" classname="get /manufacturer/id"/>
+    </testsuite>
+    <testsuite name="Segment Controller" timestamp="2021-12-29T01:59:36" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/SegmentController.test.js" failures="0" time="0.059">
+        <testcase name="Segment Controller get /segment" time="0.009" classname="get /segment"/>
+        <testcase name="Segment Controller deleteAll /segment" time="0.007" classname="deleteAll /segment"/>
+        <testcase name="Segment Controller post /segment" time="0.013" classname="post /segment"/>
+        <testcase name="Segment Controller put /segment" time="0.016" classname="put /segment"/>
+        <testcase name="Segment Controller delete /segment" time="0.01" classname="delete /segment"/>
+        <testcase name="Segment Controller deleteAll /segment" time="0.004" classname="deleteAll /segment"/>
+    </testsuite>
+    <testsuite name="Variant Controller" timestamp="2021-12-29T01:59:36" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/VarientController.test.js" failures="0" time="0.122">
+        <testcase name="Variant Controller get /variant" time="0.008" classname="get /variant"/>
+        <testcase name="Variant Controller post /variant" time="0.054" classname="post /variant"/>
+        <testcase name="Variant Controller put /variant" time="0.014" classname="put /variant"/>
+        <testcase name="Variant Controller delete /variant" time="0.015" classname="delete /variant"/>
+        <testcase name="Variant Controller deleteAll /variant" time="0.021" classname="deleteAll /variant"/>
+        <testcase name="Variant Controller search /variant" time="0.01" classname="search /variant"/>
+    </testsuite>
+    <testsuite name="CarsApi Test Coverage" errors="0" package="CarsApi Test Coverage" hostname="localhost" tests="10" failures="13" time="0.111" timestamp="" id="6">
+        <properties/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <system-out/>
+        <system-err/>
+    </testsuite>
+</testsuites>

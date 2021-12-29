@@ -7,7 +7,7 @@ var accessories = require('../fixtures/Accessories.json');
 var variants = require('../fixtures/Varient.json');
 const { agent } = require('supertest');
 
-describe('Accessories Controller', function() {
+describe('Variant Controller', function() {
   
   it('get /variant', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
@@ -27,20 +27,18 @@ describe('Accessories Controller', function() {
 
   it('post /variant', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
-        agent
-            .post('/variant')
-            .set('Accept', 'application/json')
-            .send(variants[0])
-            .end(function (err, result) {
-              console.log(err, result.body);
-              done();
-                // if (err) {
-                //     done(err);
-                // } else {
-                //     done();
-                // }
-            });
-    
+    agent
+      .post('/variant')
+      .send(variants)
+      .expect(400)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
   });
 
   it('put /variant', function(done) {
@@ -48,7 +46,7 @@ describe('Accessories Controller', function() {
     agent
       .put('/variant/1')
       .send(variants[0])
-      .expect(404)
+      .expect(200)
       .end(function(err, result) {
         if (err) {
           done(err);
@@ -64,7 +62,7 @@ describe('Accessories Controller', function() {
     agent
       .delete('/variant/1')
       .send()
-      .expect(404)
+      .expect(200)
       .end(function(err, result) {
         if (err) {
           done(err);

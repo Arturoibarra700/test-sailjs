@@ -149,7 +149,6 @@ describe('Accessories Controller', function() {
 
       it('post /car', function(done) {
         var agent = supertest.agent(sails.hooks.http.app);
-        // console.log(cars);
         agent
           .post('/car')
           .send(cars)

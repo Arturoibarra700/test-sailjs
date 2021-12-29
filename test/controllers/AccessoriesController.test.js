@@ -38,12 +38,8 @@ describe('Accessories Controller', function() {
       });
   });
 
-  xit('get /accessories fails', function(done) {
+  it('get /accessories fails', function(done) {
     
-    // sinon.stub(AccessoriesController,"fetch").throwsException('Error occured');
-    // accessoriesStub =  sinon.stub(AccessoriesController,"fetch").returnValues(accessories[0]);
-    console.log(accessories[0]);
-
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .get('/accessories')
@@ -51,10 +47,8 @@ describe('Accessories Controller', function() {
       .expect(200)
       .end(function(err, result) {
         if (err) {
-          console.log(err);
           done(err);
         } else {
-          console.log(err, result.body);
           result.body.length.should.be.aboveOrEqual(0);
           done();
         }

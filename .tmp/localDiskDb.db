@@ -4,17 +4,7 @@
     "cars": [],
     "manufacturer": [],
     "segment": [],
-    "variant": [
-      {
-        "name": "REVETRQE  XE",
-        "type": "Diesel",
-        "capacity": 1497,
-        "price": 6,
-        "createdAt": "2021-12-27T06:14:09.644Z",
-        "updatedAt": "2021-12-27T06:14:09.644Z",
-        "id": 2
-      }
-    ],
+    "variant": [],
     "accessories_cars__cars_accessories": [],
     "cars_variants__variant_cars": []
   },
@@ -191,7 +181,7 @@
     "manufacturer": {},
     "segment": {},
     "variant": {
-      "id": 2
+      "id": 6
     },
     "accessories_cars__cars_accessories": {},
     "cars_variants__variant_cars": {}

@@ -41,12 +41,50 @@ describe('Variant Controller', function() {
       });
   });
 
+  it('post /variant', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .post('/variant')
+      .send( {
+        "name": "REVETRQE XM=twesdfst",
+        "type": "Diesel",
+        "capacity": "1497 cc",
+        "price": "7.62 Lakh"
+      })
+      .set("Content-Type", "application/json")
+      .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
   it('put /variant', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .put('/variant/1')
       .send(variants[0])
       .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
+  it('put /variant', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .put('/variant/sad')
+      .send(variants[0])
+      .expect(400)
       .end(function(err, result) {
         if (err) {
           done(err);
@@ -73,12 +111,12 @@ describe('Variant Controller', function() {
       });
   });
 
-  it('deleteAll /variant', function(done) {
+  it('delete /variant', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete('/variant')
+      .delete('/variant/as')
       .send()
-      .expect(200)
+      .expect(400)
       .end(function(err, result) {
         if (err) {
           done(err);
@@ -89,7 +127,7 @@ describe('Variant Controller', function() {
       });
   });
 
-  it('search /variant', function(done) {
+  it('search 404 /variant', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     let param  = JSON.stringify(  {
       "name":{
@@ -110,5 +148,43 @@ describe('Variant Controller', function() {
         }
       });
   });  
+
+  it('search /variant', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    let param  = JSON.stringify(  {
+      "name":{
+        "contains":"XE"
+      }
+    });
+
+    agent
+      .get('/variant/search?limit=1&skip=1&sort=ASCwhere='+param)
+      .send()
+      .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });  
+
+
+  it('deleteAll /variant', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete('/variant')
+      .send()
+      .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
 
 });

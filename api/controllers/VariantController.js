@@ -17,20 +17,21 @@ module.exports = {
 
   create: function(req, res, next) {
     var carData = req.body;
+    console.log(carData);
      Variant.create(carData)
       .exec(function(err,  variant) {
         if (err) {
           sails.log.debug('Some error occured ' + err);
           return res.badRequest(err);
         }
-        return res.json( variant);
+        return res.json( variant);//
       });
   },
 
   update: function(req, res, next) {
     var id = parseInt(req.param('id'));
     if (!id) {
-      return res.badRequest('Required param: id not provided.');
+      return res.badRequest('Required param: id not provided.');//
     }
     var params = {};
     params = _.merge({}, req.params.all(), req.body);
@@ -81,14 +82,16 @@ module.exports = {
       query["limit"] = req.param('limit');
     if (req.param('skip') != undefined)
       query["skip"] = req.param('skip');
-    if (req.param('sort') != undefined)
-      query["sort"] = req.param('sort');
+    if (req.param('sort') != undefined){
+      console.log(req.param('sort'))
+      query["sort"] = req.param('sort');//
+    }
 
      Variant.find(query)
       .exec(function(err,  variant) {
         if (err) return res.badRequest(err);
         if( variant.length > 0)
-          return res.json( variant);
+          return res.json( variant);//
         else
           return res.notFound( variant);
       });

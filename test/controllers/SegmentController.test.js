@@ -23,6 +23,22 @@ describe('Segment Controller', function() {
       });
   });
 
+  it('get /segment/asd 400', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get('/segment/asd')
+      .send()
+      .expect(400)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
   it('deleteAll /segment', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -55,6 +71,22 @@ describe('Segment Controller', function() {
       });
   });
 
+  it('get /segment/1', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get('/segment/1')
+      .send()
+      .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
   it('put /segment', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -71,12 +103,44 @@ describe('Segment Controller', function() {
       });
   });
 
+  it('put /segment/asd', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .put('/segment/asd')
+      .send(segments[0])
+      .expect(400)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
   it('delete /segment', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .delete('/segment/1')
       .send()
       .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
+  it('delete /segment/asd', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete('/segment/asd')
+      .send()
+      .expect(400)
       .end(function(err, result) {
         if (err) {
           done(err);

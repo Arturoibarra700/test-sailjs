@@ -84,7 +84,7 @@ module.exports = {
       query["skip"] = req.param('skip');
     if (req.param('sort') != undefined)
       query["sort"] = req.param('sort');
-
+    console.log(query);
     Accessories.find(query)
       .exec(function(err, accessories) {
         if (err) return res.badRequest(err);

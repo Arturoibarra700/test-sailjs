@@ -23,7 +23,7 @@ module.exports = {
           sails.log.debug('Some error occured ' + err);
           return res.badRequest(err);
         }
-        return res.json(cars);
+        return res.json(cars);//
       });
   },
 
@@ -39,8 +39,8 @@ module.exports = {
       if (cars.length === 0) return res.notFound({
         "error": "Record not found."
       });
-      if (err) return next(err);
-      res.json(cars);
+      if (err) return next(err);//
+      res.json(cars);//
     });
   },
 
@@ -58,9 +58,9 @@ module.exports = {
       if (!result) return res.notFound({
         "error": "Record not found."
       });
-      Cars.destroy(id, function(err) {
-        if (err) return next(err);
-        return res.json(result);
+      Cars.destroy(id, function(err) { //
+        if (err) return next(err); //
+        return res.json(result);//
       });
     });
   },
@@ -79,17 +79,17 @@ module.exports = {
     if (where != undefined && _.isString(where))
       query["where"] = JSON.parse(where);
     if (req.param('limit') != undefined)
-      query["limit"] = req.param('limit');
+      query["limit"] = req.param('limit');//
     if (req.param('skip') != undefined)
-      query["skip"] = req.param('skip');
+      query["skip"] = req.param('skip');//
     if (req.param('sort') != undefined)
-      query["sort"] = req.param('sort');
+      query["sort"] = req.param('sort');//
 
     Cars.find(query)
       .exec(function(err, cars) {
         if (err) return res.badRequest(err);
         if(cars.length > 0)
-          return res.json(cars);
+          return res.json(cars);//
         else
           return res.notFound(cars);
       });

@@ -1,85 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.7789999999999999" tests="35" failures="0">
-  <testsuite name="Root Suite" timestamp="2021-12-29T04:10:31" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.966" tests="52" failures="0" skipped="2">
+  <testsuite name="Root Suite" timestamp="2021-12-30T07:08:49" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-12-29T04:10:33" tests="7" file="/home/azureuser/Documents/test-sailjs/test/controllers/AccessoriesController.test.js" failures="0" time="0.209">
-    <testcase name="Accessories Controller get /accessories" time="0.072" classname="get /accessories">
+  <testsuite name="Accessories Controller" timestamp="2021-12-30T07:08:50" tests="12" file="/home/azureuser/Documents/test-sailjs/test/controllers/AccessoriesController.test.js" failures="0" time="0.267">
+    <testcase name="Accessories Controller get /accessories" time="0.074" classname="get /accessories">
     </testcase>
-    <testcase name="Accessories Controller get /accessories fails" time="0.011" classname="get /accessories fails">
+    <testcase name="Accessories Controller get /accessories fails" time="0.012" classname="get /accessories fails">
     </testcase>
-    <testcase name="Accessories Controller post /accessories" time="0.08" classname="post /accessories">
+    <testcase name="Accessories Controller post /accessories" time="0.059" classname="post /accessories">
     </testcase>
-    <testcase name="Accessories Controller put /accessories" time="0.01" classname="put /accessories">
+    <testcase name="Accessories Controller post /accessories" time="0.01" classname="post /accessories">
     </testcase>
-    <testcase name="Accessories Controller delete /accessories" time="0.018" classname="delete /accessories">
+    <testcase name="Accessories Controller put /accessories" time="0.017" classname="put /accessories">
     </testcase>
-    <testcase name="Accessories Controller deleteAll /accessories" time="0.009" classname="deleteAll /accessories">
+    <testcase name="Accessories Controller put /accessories/asd" time="0.003" classname="put /accessories/asd">
     </testcase>
-    <testcase name="Accessories Controller search /accessories" time="0.009" classname="search /accessories">
+    <testcase name="Accessories Controller delete /accessories" time="0.019" classname="delete /accessories">
     </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-12-29T04:10:33" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/CarsController.test.js" failures="0" time="0.09899999999999999">
-    <testcase name="Accessories Controller get /car" time="0.008" classname="get /car">
+    <testcase name="Accessories Controller delete /accessories/asd" time="0.007" classname="delete /accessories/asd">
     </testcase>
-    <testcase name="Accessories Controller post /car" time="0.031" classname="post /car">
+    <testcase name="Accessories Controller deleteAll /accessories" time="0.007" classname="deleteAll /accessories">
     </testcase>
-    <testcase name="Accessories Controller put /car" time="0.021" classname="put /car">
+    <testcase name="Accessories Controller search /accessories" time="0.025" classname="search /accessories">
     </testcase>
-    <testcase name="Accessories Controller delete /car" time="0.012" classname="delete /car">
+    <testcase name="Accessories Controller search /accessories" time="0.024" classname="search /accessories">
     </testcase>
-    <testcase name="Accessories Controller search /car" time="0.01" classname="search /car">
-    </testcase>
-    <testcase name="Accessories Controller deleteAll /car" time="0.017" classname="deleteAll /car">
+    <testcase name="Accessories Controller search /accessories limit 10" time="0.01" classname="search /accessories limit 10">
     </testcase>
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2021-12-29T04:10:33" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/ManufacturerController.test.js" failures="0" time="0.10799999999999998">
-    <testcase name="Accessories Controller get /manufacturer" time="0.011" classname="get /manufacturer">
+  <testsuite name="Car Controller" timestamp="2021-12-30T07:08:51" tests="10" file="/home/azureuser/Documents/test-sailjs/test/controllers/CarsController.test.js" failures="0" time="0.128">
+    <testcase name="Car Controller get success /car" time="0.019" classname="get success /car">
     </testcase>
-    <testcase name="Accessories Controller put /manufacturer" time="0.014" classname="put /manufacturer">
+    <testcase name="Car Controller post fail /car" time="0.03" classname="post fail /car">
     </testcase>
-    <testcase name="Accessories Controller post /manufacturer" time="0.02" classname="post /manufacturer">
+    <testcase name="Car Controller put 404 /car" time="0.015" classname="put 404 /car">
     </testcase>
-    <testcase name="Accessories Controller delete /manufacturer" time="0.036" classname="delete /manufacturer">
+    <testcase name="Car Controller put 404 /car" time="0.023" classname="put 404 /car">
     </testcase>
-    <testcase name="Accessories Controller deleteAll /manufacturer" time="0.018" classname="deleteAll /manufacturer">
+    <testcase name="Car Controller delete 404 /car" time="0.012" classname="delete 404 /car">
     </testcase>
-    <testcase name="Accessories Controller get /manufacturer/id" time="0.009" classname="get /manufacturer/id">
+    <testcase name="Car Controller delete  400 /car" time="0.002" classname="delete  400 /car">
+    </testcase>
+    <testcase name="Car Controller deleteAll success /car" time="0.013" classname="deleteAll success /car">
+    </testcase>
+    <testcase name="Car Controller search 404 /car" time="0.014" classname="search 404 /car">
     </testcase>
   </testsuite>
-  <testsuite name="Segment Controller" timestamp="2021-12-29T04:10:34" tests="6" file="/home/azureuser/Documents/test-sailjs/test/controllers/SegmentController.test.js" failures="0" time="0.091">
-    <testcase name="Segment Controller get /segment" time="0.015" classname="get /segment">
+  <testsuite name="Manufacture Controller" timestamp="2021-12-30T07:08:51" tests="10" file="/home/azureuser/Documents/test-sailjs/test/controllers/ManufacturerController.test.js" failures="0" time="0.243">
+    <testcase name="Manufacture Controller get /manufacturer" time="0.027" classname="get /manufacturer">
     </testcase>
-    <testcase name="Segment Controller deleteAll /segment" time="0.007" classname="deleteAll /segment">
+    <testcase name="Manufacture Controller get /manufacturer/asd" time="0.048" classname="get /manufacturer/asd">
+    </testcase>
+    <testcase name="Manufacture Controller put /manufacturer" time="0.017" classname="put /manufacturer">
+    </testcase>
+    <testcase name="Manufacture Controller post /manufacturer" time="0.042" classname="post /manufacturer">
+    </testcase>
+    <testcase name="Manufacture Controller put /manufacturer/asd" time="0.009" classname="put /manufacturer/asd">
+    </testcase>
+    <testcase name="Manufacture Controller get /manufacturer/1" time="0.031" classname="get /manufacturer/1">
+    </testcase>
+    <testcase name="Manufacture Controller delete /manufacturer" time="0.023" classname="delete /manufacturer">
+    </testcase>
+    <testcase name="Manufacture Controller delete /manufacturer/asd" time="0.004" classname="delete /manufacturer/asd">
+    </testcase>
+    <testcase name="Manufacture Controller deleteAll /manufacturer" time="0.027" classname="deleteAll /manufacturer">
+    </testcase>
+    <testcase name="Manufacture Controller get /manufacturer/id" time="0.015" classname="get /manufacturer/id">
+    </testcase>
+  </testsuite>
+  <testsuite name="Segment Controller" timestamp="2021-12-30T07:08:51" tests="10" file="/home/azureuser/Documents/test-sailjs/test/controllers/SegmentController.test.js" failures="0" time="0.106">
+    <testcase name="Segment Controller get /segment" time="0.007" classname="get /segment">
+    </testcase>
+    <testcase name="Segment Controller get /segment/asd 400" time="0.015" classname="get /segment/asd 400">
+    </testcase>
+    <testcase name="Segment Controller deleteAll /segment" time="0.025" classname="deleteAll /segment">
     </testcase>
     <testcase name="Segment Controller post /segment" time="0.015" classname="post /segment">
     </testcase>
-    <testcase name="Segment Controller put /segment" time="0.029" classname="put /segment">
+    <testcase name="Segment Controller get /segment/1" time="0.017" classname="get /segment/1">
     </testcase>
-    <testcase name="Segment Controller delete /segment" time="0.013" classname="delete /segment">
+    <testcase name="Segment Controller put /segment" time="0.008" classname="put /segment">
     </testcase>
-    <testcase name="Segment Controller deleteAll /segment" time="0.012" classname="deleteAll /segment">
+    <testcase name="Segment Controller put /segment/asd" time="0.002" classname="put /segment/asd">
+    </testcase>
+    <testcase name="Segment Controller delete /segment" time="0.011" classname="delete /segment">
+    </testcase>
+    <testcase name="Segment Controller delete /segment/asd" time="0.002" classname="delete /segment/asd">
+    </testcase>
+    <testcase name="Segment Controller deleteAll /segment" time="0.004" classname="deleteAll /segment">
     </testcase>
   </testsuite>
-  <testsuite name="Variant Controller" timestamp="2021-12-29T04:10:34" tests="10" file="/home/azureuser/Documents/test-sailjs/test/controllers/VarientController.test.js" failures="0" time="0.27199999999999996">
-    <testcase name="Variant Controller get /variant" time="0.01" classname="get /variant">
+  <testsuite name="Variant Controller" timestamp="2021-12-30T07:08:51" tests="10" file="/home/azureuser/Documents/test-sailjs/test/controllers/VarientController.test.js" failures="0" time="0.22200000000000003">
+    <testcase name="Variant Controller get /variant" time="0.008" classname="get /variant">
     </testcase>
-    <testcase name="Variant Controller post /variant" time="0.072" classname="post /variant">
+    <testcase name="Variant Controller post /variant" time="0.059" classname="post /variant">
     </testcase>
-    <testcase name="Variant Controller post /variant" time="0.026" classname="post /variant">
+    <testcase name="Variant Controller post /variant" time="0.042" classname="post /variant">
     </testcase>
-    <testcase name="Variant Controller put /variant" time="0.017" classname="put /variant">
+    <testcase name="Variant Controller put /variant" time="0.028" classname="put /variant">
     </testcase>
-    <testcase name="Variant Controller put /variant" time="0.02" classname="put /variant">
+    <testcase name="Variant Controller put /variant" time="0.003" classname="put /variant">
     </testcase>
-    <testcase name="Variant Controller delete /variant" time="0.033" classname="delete /variant">
+    <testcase name="Variant Controller delete /variant" time="0.03" classname="delete /variant">
     </testcase>
-    <testcase name="Variant Controller delete /variant" time="0.021" classname="delete /variant">
+    <testcase name="Variant Controller delete /variant" time="0.013" classname="delete /variant">
     </testcase>
-    <testcase name="Variant Controller search 404 /variant" time="0.02" classname="search 404 /variant">
+    <testcase name="Variant Controller search 404 /variant" time="0.009" classname="search 404 /variant">
     </testcase>
-    <testcase name="Variant Controller search /variant" time="0.021" classname="search /variant">
+    <testcase name="Variant Controller search /variant" time="0.013" classname="search /variant">
     </testcase>
-    <testcase name="Variant Controller deleteAll /variant" time="0.032" classname="deleteAll /variant">
+    <testcase name="Variant Controller deleteAll /variant" time="0.017" classname="deleteAll /variant">
     </testcase>
   </testsuite>
 </testsuites>

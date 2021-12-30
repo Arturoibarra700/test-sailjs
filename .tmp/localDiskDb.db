@@ -176,14 +176,24 @@
     }
   },
   "counters": {
-    "accessories": {},
-    "cars": {},
-    "manufacturer": {},
-    "segment": {},
-    "variant": {
+    "accessories": {
+      "id": 46
+    },
+    "cars": {
       "id": 6
     },
+    "manufacturer": {
+      "id": 16
+    },
+    "segment": {
+      "id": 16
+    },
+    "variant": {
+      "id": 28
+    },
     "accessories_cars__cars_accessories": {},
-    "cars_variants__variant_cars": {}
+    "cars_variants__variant_cars": {
+      "id": 4
+    }
   }
 }

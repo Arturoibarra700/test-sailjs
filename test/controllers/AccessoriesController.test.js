@@ -71,6 +71,22 @@ describe('Accessories Controller', function() {
       });
   });
 
+  it('post /accessories', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .post('/accessories')
+      .send(null)
+      .expect(400)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
   it('put /accessories', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -87,12 +103,44 @@ describe('Accessories Controller', function() {
       });
   });
 
+  it('put /accessories/asd', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .put('/accessories/asd')
+      .send(accessories[0])
+      .expect(400)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+
+          done();
+        }
+      });
+  });
+
   it('delete /accessories', function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .delete('/accessories/1')
       .send()
       .expect(200)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
+  it('delete /accessories/asd', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete('/accessories/asd')
+      .send()
+      .expect(400)
       .end(function(err, result) {
         if (err) {
           done(err);
@@ -139,4 +187,47 @@ describe('Accessories Controller', function() {
       });
   });
 
+  it('search /accessories', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    let param  = JSON.stringify(  {
+      "name":{
+        "contains":"Bumper"
+      }
+    });
+
+    agent
+      .get('/accessories/search?limit=1&skip=1&sort=ASC&where='+param)
+      .send()
+      .expect(404)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
+
+  it('search /accessories limit 10', function(done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    let param  = JSON.stringify(  {
+      "name":{
+        "contains":"Bumper"
+      }
+    });
+
+    agent
+      .get('/accessories/search?skip=5')
+      .send()
+      .expect(404)
+      .end(function(err, result) {
+        if (err) {
+          done(err);
+        } else {
+          // result.body.length.should.be.aboveOrEqual(0);
+          done();
+        }
+      });
+  });
 });
